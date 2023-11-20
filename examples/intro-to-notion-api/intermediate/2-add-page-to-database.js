@@ -32,42 +32,42 @@ async function addNotionPageToDatabase(databaseId, pageProperties) {
 
 async function main() {
   // Create a new database
-  const newDatabase = await notion.databases.create({
-    parent: {
-      type: "page_id",
-      page_id: pageId,
-    },
-    title: [
-      {
-        type: "text",
-        text: {
-          content: "Grocery list",
-        },
-      },
-    ],
-    properties: {
-      // These properties represent columns in the database (i.e. its schema)
-      "Grocery item": {
-        type: "title",
-        title: {},
-      },
-      Price: {
-        type: "number",
-        number: {
-          format: "dollar",
-        },
-      },
-      "Last ordered": {
-        type: "date",
-        date: {},
-      },
-    },
-  })
+  // const newDatabase = await notion.databases.create({
+  //   parent: {
+  //     type: "page_id",
+  //     page_id: pageId,
+  //   },
+  //   title: [
+  //     {
+  //       type: "text",
+  //       text: {
+  //         content: "Grocery list",
+  //       },
+  //     },
+  //   ],
+  //   properties: {
+  //     // These properties represent columns in the database (i.e. its schema)
+  //     "Grocery item": {
+  //       type: "title",
+  //       title: {},
+  //     },
+  //     Price: {
+  //       type: "number",
+  //       number: {
+  //         format: "dollar",
+  //       },
+  //     },
+  //     "Last ordered": {
+  //       type: "date",
+  //       date: {},
+  //     },
+  //   },
+  // })
 
   // Print the new database's URL. Visit the URL in your browser to see the pages that get created in the next step.
-  console.log(newDatabase.url)
+  //console.log(newDatabase.url)
 
-  const databaseId = newDatabase.id
+  const databaseId = pageId//newDatabase.id
   // If there is no ID (if there's an error), return.
   if (!databaseId) return
 

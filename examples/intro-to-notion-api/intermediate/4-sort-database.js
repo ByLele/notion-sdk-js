@@ -4,8 +4,8 @@ import { propertiesForNewPages } from "./sampleData.js"
 
 config()
 
-const pageId = process.env.NOTION_PAGE_ID
-const apiKey = process.env.NOTION_API_KEY
+const pageId = "f584eb54-7877-44f0-8c15-29f9551c1ce5"//process.env.NOTION_PAGE_ID
+const apiKey = "secret_fz8hGuVnnQsTbifpRhXx0SCAfNiqSSPBn7IGfZKh0ww"//process.env.NOTION_API_KEY
 
 const notion = new Client({ auth: apiKey })
 
@@ -60,41 +60,41 @@ async function queryAndSortDatabase(databaseId) {
 
 async function main() {
   // Create a new database
-  const newDatabase = await notion.databases.create({
-    parent: {
-      type: "page_id",
-      page_id: pageId,
-    },
-    title: [
-      {
-        type: "text",
-        text: {
-          content: "Grocery list",
-        },
-      },
-    ],
-    properties: {
-      // These properties represent columns in the database (i.e. its schema)
-      "Grocery item": {
-        type: "title",
-        title: {},
-      },
-      Price: {
-        type: "number",
-        number: {
-          format: "dollar",
-        },
-      },
-      "Last ordered": {
-        type: "date",
-        date: {},
-      },
-    },
-  })
+  // const newDatabase = await notion.databases.create({
+  //   parent: {
+  //     type: "page_id",
+  //     page_id: pageId,
+  //   },
+  //   title: [
+  //     {
+  //       type: "text",
+  //       text: {
+  //         content: "Grocery list",
+  //       },
+  //     },
+  //   ],
+  //   properties: {
+  //     // These properties represent columns in the database (i.e. its schema)
+  //     "Grocery item": {
+  //       type: "title",
+  //       title: {},
+  //     },
+  //     Price: {
+  //       type: "number",
+  //       number: {
+  //         format: "dollar",
+  //       },
+  //     },
+  //     "Last ordered": {
+  //       type: "date",
+  //       date: {},
+  //     },
+  //   },
+  // })
   // Print the new database's URL. Visit the URL in your browser to see the pages that get created in the next step.
-  console.log(newDatabase.url)
+  //console.log(newDatabase.url)
 
-  const databaseId = newDatabase.id
+  const databaseId = pageId//newDatabase.id
   if (!databaseId) return
 
   console.log("Adding new pages...")
