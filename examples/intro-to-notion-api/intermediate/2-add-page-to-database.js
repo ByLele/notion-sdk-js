@@ -4,8 +4,8 @@ import { propertiesForNewPages } from "./sampleData.js"
 
 config()
 
-const pageId = process.env.NOTION_PAGE_ID
-const apiKey = process.env.NOTION_API_KEY
+const pageId = "f584eb54-7877-44f0-8c15-29f9551c1ce5"//process.env.NOTION_PAGE_ID
+const apiKey = "secret_fz8hGuVnnQsTbifpRhXx0SCAfNiqSSPBn7IGfZKh0ww"//process.env.NOTION_API_KEY
 
 const notion = new Client({ auth: apiKey })
 

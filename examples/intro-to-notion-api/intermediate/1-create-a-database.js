@@ -3,8 +3,8 @@ import { config } from "dotenv"
 
 config()
 
-const pageId = process.env.NOTION_PAGE_ID
-const apiKey = process.env.NOTION_API_KEY
+const apiKey = "secret_fz8hGuVnnQsTbifpRhXx0SCAfNiqSSPBn7IGfZKh0ww"//process.env.NOTION_PAGE_ID
+const pageId = "317cdbedcd35469c90b4854fe3f053d7"//"780d7bfd44a64a37bcb21c5f5278053e"//process.env.NOTION_API_KEY
 
 const notion = new Client({ auth: apiKey })
 
@@ -19,6 +19,8 @@ const notion = new Client({ auth: apiKey })
  */
 
 async function main() {
+  console.log(pageId)
+  console.log(apiKey)
   // Create a new database
   const newDatabase = await notion.databases.create({
     parent: {
