@@ -108,3 +108,105 @@ async function main() {
 }
 
 main()
+/*
+{
+  object: 'list',
+  results: [
+    {
+      object: 'page',
+      id: '44ca664e-3ebd-409c-8f45-76b67fdacb6c',
+      created_time: '2023-11-20T14:33:00.000Z',
+      last_edited_time: '2023-11-20T14:33:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Tomatoes-44ca664e3ebd409c8f4576b67fdacb6c',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '899862e0-a228-4e17-8ee0-af2d01e311ed',
+      created_time: '2023-11-20T14:32:00.000Z',
+      last_edited_time: '2023-11-20T14:32:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Tomatoes-899862e0a2284e178ee0af2d01e311ed',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '35c6f1f0-84c8-4e1b-adca-ce6020c5aca8',
+      created_time: '2023-11-20T14:27:00.000Z',
+      last_edited_time: '2023-11-20T14:27:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Tomatoes-35c6f1f084c84e1badcace6020c5aca8',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: 'ecb4320e-792c-41e0-916c-8b6f0624d4b1',
+      created_time: '2023-11-20T14:33:00.000Z',
+      last_edited_time: '2023-11-20T14:33:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Lettuce-ecb4320e792c41e0916c8b6f0624d4b1',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '3e65327d-b4aa-4f71-824e-2754f08a1801',
+      created_time: '2023-11-20T14:32:00.000Z',
+      last_edited_time: '2023-11-20T14:32:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Lettuce-3e65327db4aa4f71824e2754f08a1801',
+      public_url: null
+    },
+    {
+      object: 'page',
+      id: '758f4d40-97b8-4784-970c-1c116067f773',
+      created_time: '2023-11-20T14:28:00.000Z',
+      last_edited_time: '2023-11-20T14:28:00.000Z',
+      created_by: [Object],
+      last_edited_by: [Object],
+      cover: null,
+      icon: null,
+      parent: [Object],
+      archived: false,
+      properties: [Object],
+      url: 'https://www.notion.so/Lettuce-758f4d4097b84784970c1c116067f773',
+      public_url: null
+    }
+  ],
+  next_cursor: null,
+  has_more: false,
+  type: 'page_or_database',
+  page_or_database: {},
+  request_id: '8f01f2f5-5a53-4957-8592-ede0a3e8e81d'
+}
+*/
